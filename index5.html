@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="vi" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoàn Algo - Premium Trading Bot System</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #060814;
+        }
+        .glow-effect:hover {
+            box-shadow: 0 0 30px rgba(245, 158, 11, 0.15);
+        }
+        .glass-card {
+            background: rgba(17, 24, 39, 0.7);
+            backdrop-filter: blur(10px);
+        }
+    </style>
+</head>
+<body class="text-gray-200 antialiased selection:bg-amber-500 selection:text-black">
+
+    <div class="fixed top-0 left-1/4 w-96 h-96 bg-amber-500/10 rounded-full blur-[120px] pointer-events-none z-0"></div>
+    <div class="fixed bottom-1/4 right-1/4 w-96 h-96 bg-blue-500/10 rounded-full blur-[120px] pointer-events-none z-0"></div>
+
+    <header class="sticky top-0 z-50 w-full border-b border-gray-800/60 bg-[#060814]/80 backdrop-blur-md">
+        <div class="max-w-6xl mx-auto px-4 h-20 flex items-center justify-between">
+            <a href="#home" class="flex items-center gap-3 group">
+                <div class="w-10 h-10 bg-gradient-to-tr from-amber-600 to-amber-400 rounded-xl flex items-center justify-center shadow-lg shadow-amber-500/20 group-hover:rotate-6 transition-transform duration-300">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M2 17L12 22L22 17" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M2 12L12 17L22 12" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                <span class="text-xl font-extrabold tracking-tight text-white">
+                    KHO <span class="text-amber-400 font-medium">BOT</span>
+                </span>
+            </a>
+
+            <nav class="hidden md:flex items-center space-x-10 text-sm font-semibold tracking-wide">
+                <a href="#home" class="text-amber-400 transition hover:opacity-90">Trang chủ</a>
+                <a href="#features" class="text-gray-400 hover:text-white transition">Tính năng</a>
+                <a href="#products" class="text-gray-400 hover:text-white transition">Sản phẩm Bot</a>
+            </nav>
+
+            <div class="flex items-center gap-4">
+                <a href="https://t.me/RyanTradingScalper" target="_blank" class="hidden sm:inline-flex items-center gap-2 bg-gray-800 hover:bg-gray-700 text-white border border-gray-700 text-sm font-bold px-5 py-2.5 rounded-xl transition">
+                    <i class="fab fa-telegram text-sky-400 text-base"></i> Hỗ trợ Telegram
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <section id="home" class="relative max-w-5xl mx-auto px-4 pt-24 pb-16 text-center space-y-6 z-10">
+        <span class="inline-flex items-center gap-2 py-1.5 px-4 rounded-full text-xs font-bold bg-amber-400/10 text-amber-400 border border-amber-400/20 shadow-inner">
+            <span class="w-2 h-2 rounded-full bg-amber-400 animate-pulse"></span> THUẬT TOÁN GIAO DỊCH CAO CẤP 2026
+        </span>
+        <h2 class="text-4xl sm:text-6xl font-black text-white tracking-tight leading-[1.15]">
+            Tối Ưu Hóa Lợi Nhuận Bằng<br>
+            <span class="bg-gradient-to-r from-amber-400 via-orange-400 to-amber-500 bg-clip-text text-transparent">Hệ Thống Trí Tuệ Nhân Tạo</span>
+        </h2>
+        <p class="max-w-2xl mx-auto text-gray-400 text-base sm:text-lg leading-relaxed">
+            Hệ thống EA MT5 chuyên biệt, Bot Telegram và công cụ quản lý vốn tự động hóa hoàn toàn. Đem lại hiệu suất giao dịch kỷ luật, loại bỏ yếu tố tâm lý.
+        </p>
+        <div class="pt-4 flex flex-wrap justify-center gap-4">
+            <a href="#products" class="bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-black font-extrabold px-8 py-4 rounded-xl shadow-xl shadow-amber-500/10 transition transform hover:-translate-y-0.5">
+                Kích hoạt ngay <i class="fas fa-arrow-right ml-2 text-sm"></i>
+            </a>
+        </div>
+    </section>
+
+    <section id="features" class="max-w-6xl mx-auto px-4 py-16 z-10 relative">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="glass-card border border-gray-800 p-8 rounded-2xl space-y-4">
+                <div class="w-12 h-12 bg-amber-400/10 text-amber-400 rounded-xl flex items-center justify-center text-xl font-bold">
+                    <i class="fas fa-bolt"></i>
+                </div>
+                <h3 class="text-lg font-bold text-white">Thực Thi Siêu Tốc</h3>
+                <p class="text-sm text-gray-400 leading-relaxed">Thuật toán phân tích đa khung thời gian và khớp lệnh chỉ trong mili giây ngay khi xuất hiện tín hiệu chuẩn xác.</p>
+            </div>
+            <div class="glass-card border border-gray-800 p-8 rounded-2xl space-y-4">
+                <div class="w-12 h-12 bg-amber-400/10 text-amber-400 rounded-xl flex items-center justify-center text-xl font-bold">
+                    <i class="fas fa-shield-cat"></i>
+                </div>
+                <h3 class="text-lg font-bold text-white">Quản Trị Rủi Ro Chặt Chẽ</h3>
+                <p class="text-sm text-gray-400 leading-relaxed">Tích hợp sẵn bộ lọc tin tức lớn và công cụ tự động tính toán khối lượng lệnh (Lot size) an toàn theo vốn.</p>
+            </div>
+            <div class="glass-card border border-gray-800 p-8 rounded-2xl space-y-4">
+                <div class="w-12 h-12 bg-amber-400/10 text-amber-400 rounded-xl flex items-center justify-center text-xl font-bold">
+                    <i class="fas fa-headset"></i>
+                </div>
+                <h3 class="text-lg font-bold text-white">Vận Hành 24/7</h3>
+                <p class="text-sm text-gray-400 leading-relaxed">Hệ thống hoạt động liên tục, bền bỉ trên máy chủ VPS từ thứ 2 đến thứ 6, đảm bảo không bỏ lỡ sóng lớn.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="products" class="max-w-6xl mx-auto px-4 py-16 z-10 relative">
+        <div class="text-center mb-16 space-y-3">
+            <h2 class="text-3xl font-extrabold text-white tracking-tight sm:text-4xl">Danh Sách Bot Trading Cao Cấp</h2>
+            <p class="text-gray-400 text-sm max-w-md mx-auto">Sản phẩm đóng gói chuyên nghiệp, cài đặt dễ dàng, hỗ trợ cập nhật lâu dài.</p>
+            <div class="w-12 h-1 bg-amber-400 mx-auto rounded-full"></div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            
+            <div class="glass-card rounded-2xl overflow-hidden border border-gray-800 hover:border-amber-500/40 glow-effect transition-all duration-300 flex flex-col group shadow-2xl">
+                <div class="relative aspect-[16/10] overflow-hidden bg-gray-900">
+                    <img src="input_file_0.png" alt="EA Gold Sniper" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-[#060814] via-transparent to-transparent opacity-80"></div>
+                </div>
+                <div class="p-6 flex-1 flex flex-col justify-between space-y-5">
+                    <div class="space-y-2">
+                        <span class="inline-block bg-amber-400/10 text-amber-400 text-[11px] font-extrabold px-2.5 py-1 rounded tracking-wider uppercase border border-amber-400/20">EA MT5</span>
+                        <h3 class="text-xl font-bold text-white">EA Gold Sniper</h3>
+                        <p class="text-sm text-gray-400 leading-relaxed">Bot giao dịch vàng tự động theo xu hướng, phù hợp XAUUSD khung thời gian M5 & M15.</p>
+                    </div>
+                    <div class="pt-2 flex items-center justify-between border-t border-gray-800/80">
+                        <span class="text-2xl font-black text-amber-400">$499</span>
+                        <button onclick="openPopup('EA Gold Sniper', '499')" class="bg-amber-400 hover:bg-amber-500 text-black font-extrabold py-2.5 px-5 rounded-xl text-sm transition">
+                            Thanh toán / Liên hệ
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="glass-card rounded-2xl overflow-hidden border border-gray-800 hover:border-amber-500/40 glow-effect transition-all duration-300 flex flex-col group shadow-2xl">
+                <div class="relative aspect-[16/10] overflow-hidden bg-gray-900">
+                    <img src="input_file_1.png" alt="EA Scalper Pro" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-[#060814] via-transparent to-transparent opacity-80"></div>
+                </div>
+                <div class="p-6 flex-1 flex flex-col justify-between space-y-5">
+                    <div class="space-y-2">
+                        <span class="inline-block bg-amber-400/10 text-amber-400 text-[11px] font-extrabold px-2.5 py-1 rounded tracking-wider uppercase border border-amber-400/20">EA MT5</span>
+                        <h3 class="text-xl font-bold text-white">EA Scalper Pro</h3>
+                        <p class="text-sm text-gray-400 leading-relaxed">EA vào lệnh ngắn hạn, tần suất cao, tối ưu tuyệt đối cho trader thích nhiều lệnh trong ngày.</p>
+                    </div>
+                    <div class="pt-2 flex items-center justify-between border-t border-gray-800/80">
+                        <span class="text-2xl font-black text-amber-400">$1099</span>
+                        <button onclick="openPopup('EA Scalper Pro', '1099')" class="bg-amber-400 hover:bg-amber-500 text-black font-extrabold py-2.5 px-5 rounded-xl text-sm transition">
+                            Thanh toán / Liên hệ
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="glass-card rounded-2xl overflow-hidden border border-gray-800 hover:border-amber-500/40 glow-effect transition-all duration-300 flex flex-col group shadow-2xl">
+                <div class="relative aspect-[16/10] overflow-hidden bg-gray-900">
+                    <img src="input_file_2.png" alt="Telegram Signal Bot" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-[#060814] via-transparent to-transparent opacity-80"></div>
+                </div>
+                <div class="p-6 flex-1 flex flex-col justify-between space-y-5">
+                    <div class="space-y-2">
+                        <span class="inline-block bg-blue-400/10 text-blue-400 text-[11px] font-extrabold px-2.5 py-1 rounded tracking-wider uppercase border border-blue-400/20">Telegram Bot</span>
+                        <h3 class="text-xl font-bold text-white">Telegram Signal Bot</h3>
+                        <p class="text-sm text-gray-400 leading-relaxed">Bot tự động bắn tín hiệu thời gian thực lên kênh Telegram, hoàn hảo xây dựng nhóm VIP.</p>
+                    </div>
+                    <div class="pt-2 flex items-center justify-between border-t border-gray-800/80">
+                        <span class="text-2xl font-black text-amber-400">$399</span>
+                        <button onclick="openPopup('Telegram Signal Bot', '399')" class="bg-amber-400 hover:bg-amber-500 text-black font-extrabold py-2.5 px-5 rounded-xl text-sm transition">
+                            Thanh toán / Liên hệ
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <div id="popup" class="hidden fixed inset-0 z-50 bg-black/80 backdrop-blur-md items-center justify-center p-4">
+        <div class="bg-[#0f132a] border border-gray-800 rounded-2xl w-full max-w-md p-6 relative shadow-2xl space-y-5">
+            <button onclick="closePopup()" class="absolute top-4 right-4 text-gray-400 hover:text-white text-2xl font-light transition">&times;</button>
+            
+            <div class="text-center space-y-1">
+                <h3 class="text-xl font-bold text-amber-400">Thanh toán chuyển khoản</h3>
+                <p class="text-xs text-gray-400">Đơn hàng: <span id="product-name" class="text-white font-semibold"></span></p>
+            </div>
+
+            <div class="bg-white p-3 rounded-xl mx-auto w-48 h-48 flex items-center justify-center shadow-2xl">
+                <img id="qr-code" src="" alt="VietQR" class="w-full h-full object-contain">
+            </div>
+            <p class="text-center text-[11px] text-gray-400 italic -mt-2">Mở App Ngân hàng quét mã QR để tự điền thông tin</p>
+
+            <div class="bg-black/40 p-4 rounded-xl text-sm space-y-2.5 border border-gray-800">
+                <div class="flex justify-between"><span class="text-gray-400">Ngân hàng:</span> <span class="font-medium text-white">MB Bank (Quân Đội)</span></div>
+                <div class="flex justify-between items-center">
+                    <span class="text-gray-400">Số tài khoản:</span> 
+                    <div class="flex items-center gap-2">
+                        <span id="bank-stk" class="font-bold text-amber-400 tracking-wider text-base">0585085240</span>
+                        <button id="copy-btn" onclick="copySTK()" class="bg-amber-400/10 hover:bg-amber-400/20 text-amber-400 px-2 py-1 rounded text-xs font-semibold transition">
+                            Copy
+                        </button>
+                    </div>
+                </div>
+                <div class="flex justify-between"><span class="text-gray-400">Chủ tài khoản:</span> <span class="font-medium text-white">Trần Văn Hoàn</span></div>
+            </div>
+
+            <div class="text-center pt-2">
+                <a href="https://t.me/RyanTradingScalper" target="_blank" class="inline-flex items-center gap-2 text-sm font-bold text-sky-400 hover:text-sky-300 transition">
+                    <i class="fab fa-telegram text-base"></i> Gửi hóa đơn xác nhận qua Telegram
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-[#03050d] border-t border-gray-900 py-12 text-center text-xs text-gray-500 space-y-2 z-10 relative">
+        <p>&copy; 2026 KhoBot. All rights reserved.</p>
+        <p class="text-gray-600">Hệ thống thuật toán tự động chuyên biệt cho thị trường tài chính toàn cầu.</p>
+    </footer>
+
+    <script>
+        function openPopup(productName, price) {
+            const popup = document.getElementById('popup');
+            popup.classList.remove('hidden');
+            popup.classList.add('flex');
+            
+            document.getElementById('product-name').textContent = productName + ' ($' + price + ')';
+            
+            // Generate clean auto-memo VietQR API link
+            const encodedMemo = encodeURIComponent('Hoan Algo mua ' + productName);
+            const qrUrl = `https://img.vietqr.io/image/MB-0585085240-compact2.png?addInfo=${encodedMemo}&accountName=TRAN%20VAN%20HOAN`;
+            document.getElementById('qr-code').src = qrUrl;
+        }
+
+        function closePopup() {
+            const popup = document.getElementById('popup');
+            popup.classList.add('hidden');
+            popup.classList.remove('flex');
+        }
+
+        function copySTK() {
+            const stk = document.getElementById('bank-stk').textContent;
+            const btn = document.getElementById('copy-btn');
+            
+            navigator.clipboard.writeText(stk).then(() => {
+                btn.textContent = 'Đã copy!';
+                btn.classList.replace('text-amber-400', 'text-green-400');
+                setTimeout(() => {
+                    btn.textContent = 'Copy';
+                    btn.classList.replace('text-green-400', 'text-amber-400');
+                }, 2000);
+            });
+        }
+
+        // Close on clicking outside modal content
+        window.onclick = function(event) {
+            const popup = document.getElementById('popup');
+            if (event.target == popup) {
+                closePopup();
+            }
+        }
+    </script>
+
+</body>
+</html>
